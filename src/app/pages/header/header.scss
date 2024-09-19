@@ -1,0 +1,74 @@
+@import "../../common/css/mixin.scss";
+
+.tittlebar {
+  border-bottom: 1px solid #e6e8eb;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 1.6rem 0.7rem 1.6rem;
+  // margin-bottom: 0.9rem;
+
+  @include breakpoint(600px) {
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+  }
+  .navigating-titlebar {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .notification-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2.4rem;
+    :hover {
+      cursor: pointer;
+    }
+  }
+  .profile-dropdown {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+    cursor: pointer;
+    .hyper_logo {
+      @include breakpoint(600px) {
+        display: none;
+      }
+    }
+  }
+
+  div {
+    display: flex;
+  }
+
+  p {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  i {
+    margin-right: 2.4rem;
+    box-sizing: border-box;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0.8rem 0.8rem;
+    background-color: #f5f8fb;
+    font-size: 2rem;
+    display: block;
+  }
+  img {
+    box-sizing: border-box;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.2rem;
+  }
+
+  .user-logo {
+    position: relative;
+  }
+}

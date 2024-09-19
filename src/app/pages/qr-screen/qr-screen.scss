@@ -1,0 +1,143 @@
+.payment{
+    background-color: #F2F2F2;
+    padding-top: 20px;
+    .paymentContainer{
+        font-size: 16px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 50px;
+        .paymentDetail{
+            background-color: white;
+            .paymentContent{
+               
+                width: 100%;
+                height: 80px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+
+                .paymentVisible{
+                    cursor: pointer;
+                    color: blue;
+                    text-decoration: underline;
+                }
+                
+            }
+            .paymentCart{
+                padding: 20px;
+                .paymentItem{
+                    .paymentRow{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        .itemLeft{
+                            font-weight: bold;
+                        }
+                        .itemRight{
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .paymentTotal{
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 10px;
+                }
+            }
+        }
+        .paymentQR{
+            background-color: white;
+            margin-top: 20px;
+            .paymentTitle{
+                font-size: 14px;
+                padding: 10px;
+                text-align: center;
+            }
+            .qrContainer{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                margin-top: 50px;
+                .qrCode{
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        max-width: 80%;
+                        cursor: pointer;
+                    }
+                }
+                .qrInfo{
+                    width: 50%;
+                    .infoBank{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        gap: 10px;
+                        .infoLogo{
+                            display: flex;
+                            align-items: center;
+                            img{
+                                width: 30px;
+                                height: 30px;
+                            }
+                           
+                        }
+                        .infoDiv{
+                            font-size: 14px;
+                            .infoTitle{
+                              color: #555555;
+                            }
+                            .infoContent{
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .infoContainer{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                        .infoItem{
+                            font-size: 14px;
+                            .infoTitle{
+                              color: #555555;
+                            }
+                            .infoContent{
+                                font-weight: bold;
+                            }
+                           
+                        }
+                        .infoButton{
+                            display: flex;
+                            align-items: center;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+            .paymentFooter{
+                font-size: 14px;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin-top: 50px;
+                padding-bottom: 50px;
+                .footerBtn{
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .footerWarning{
+                    width: 50%;
+                }
+            }
+        }
+        
+    }
+}
+
